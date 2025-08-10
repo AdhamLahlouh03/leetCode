@@ -1,8 +1,7 @@
 class LRUCache {
     int cap;
-    list<pair<int,int>> DL; // Doubly Linked List
-    unordered_map<int, list<pair<int,int>>::iterator> pos; // Map: key -> iterator
-
+    list<pair<int,int>> DL; 
+    unordered_map<int, list<pair<int,int>>::iterator> pos; 
 public:
     LRUCache(int capacity) : cap(capacity) {}
 
